@@ -1,0 +1,8 @@
+Procure na internet a função de cada um dos arquivos/pastas geradas em um projeto React Native.
+.expo
+package.json > manifesto do projeto, metadados
+package-lock.json > automatico. garante versao do ambiente das bibliotecas
+index.js > porta de entrada principal
+app.json > plataformas de deploy e automação. icones e tela splash. orientacao da tela
+app.js > middlewares, rotas, banco de dados e outras configuracoes globais
+assets > armazenar recursos estaticos, imagens, icones 
