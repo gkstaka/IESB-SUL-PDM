@@ -6,3 +6,5 @@ index.js > porta de entrada principal
 app.json > plataformas de deploy e automação. icones e tela splash. orientacao da tela
 app.js > middlewares, rotas, banco de dados e outras configuracoes globais
 assets > armazenar recursos estaticos, imagens, icones 
+expo > configuracoes do expo
+node_modules > todas as dependencias instaladas
