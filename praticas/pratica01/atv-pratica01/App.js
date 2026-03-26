@@ -4,13 +4,16 @@ import TodasDespesas from "./screens/TodasDespesas";
 import { NavigationContainer } from "@react-navigation/native";
 import GerenciarDespesa from "./screens/GerenciarDespesa";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
 
 const Tab = createMaterialTopTabNavigator();
 
 function BottomTabScreen() {
+const insets = useSafeAreaInsets();
+
   return (
-    <Tab.Navigator>
+    
+    <Tab.Navigator  style={{paddingTop: insets.top}}>
       <Tab.Screen
         name="DespesasRecentes"
         component={DespesaRecente}
@@ -26,11 +29,11 @@ function BottomTabScreen() {
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <NavigationContainer>
-        <BottomTabScreen />
-      </NavigationContainer>
-    </SafeAreaView>
+    <SafeAreaProvider>
+        <NavigationContainer>
+          <BottomTabScreen />
+        </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
 
@@ -41,4 +44,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  topNavigator: {
+    paddingTop: '20px'
+  }
 });
