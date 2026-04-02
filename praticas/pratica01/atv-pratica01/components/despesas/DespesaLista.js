@@ -1,4 +1,4 @@
-import { FlatList, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native"; // Added StyleSheet
 import DespesaItem from "./DespesaItem";
 
 /**
@@ -12,21 +12,24 @@ export default function DespesaLista({ dadosDespesas, periodo }) {
    *
    * @param {item: {id:string, descricao: string, valor: number, data: Date}} item
    */
-  function renderDespesa({ item }) {
-    const descricao = item.descricao;
-    const valor = item.valor;
-    const data = item.data;
-    return <DespesaItem descricao={descricao} valor={valor} data={data}/>;
-  }
-
   return (
-    <View>
-      <FlatList
-        data={dadosDespesas}
-        keyExtractor={(despesa) => despesa.id}
-        renderItem={renderDespesa}
-        
-      ></FlatList>
+    <View style={styles.container}>
+      <ScrollView> 
+        {dadosDespesas.map((item) => (
+          <DespesaItem
+            key={item.id}
+            descricao={item.descricao}
+            valor={item.valor}
+            data={item.data}
+          />
+        ))}
+      </ScrollView>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

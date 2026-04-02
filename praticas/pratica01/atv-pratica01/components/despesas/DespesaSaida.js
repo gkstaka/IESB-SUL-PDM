@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import DespesaLista from "./DespesaLista";
 import DespesaSumario from "./DespesaSumario";
 
@@ -11,9 +11,15 @@ import DespesaSumario from "./DespesaSumario";
 
 export default function DespesaSaida({ dadosDespesas, periodo }) {
   return (
-    <View>
+    <View style={styles.container}>
       <DespesaSumario dadosDespesas={dadosDespesas} periodo={periodo} />
       <DespesaLista dadosDespesas={dadosDespesas} periodo={periodo}/>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

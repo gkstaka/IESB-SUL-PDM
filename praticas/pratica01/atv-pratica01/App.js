@@ -46,6 +46,78 @@ function NavigationTab() {
       valor: 85.0,
       data: new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 4),
     },
+    {
+      id: "6",
+      descricao: "Aluguel",
+      valor: 1500.0,
+      data: new Date(2025, 2, 5),
+    },
+    {
+      id: "7",
+      descricao: "Academia",
+      valor: 90.0,
+      data: new Date(2025, 2, 1),
+    },
+    {
+      id: "8",
+      descricao: "Jantar Fora",
+      valor: 150.0,
+      data: new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 1),
+    },
+    {
+      id: "9",
+      descricao: "Cinema",
+      valor: 60.0,
+      data: new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 3),
+    },
+    {
+      id: "10",
+      descricao: "Farmácia",
+      valor: 45.5,
+      data: new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 5),
+    },
+    {
+      id: "11",
+      descricao: "Padaria",
+      valor: 22.3,
+      data: new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 6),
+    },
+    {
+      id: "12",
+      descricao: "Assinatura Streaming",
+      valor: 55.9,
+      data: new Date(2025, 1, 20),
+    },
+    {
+      id: "13",
+      descricao: "Manutenção Carro",
+      valor: 200.0,
+      data: new Date(2025, 1, 15),
+    },
+    {
+      id: "14",
+      descricao: "Presente de Aniversário",
+      valor: 120.0,
+      data: new Date(2025, 1, 10),
+    },
+    {
+      id: "15",
+      descricao: "Material de Escritório",
+      valor: 35.0,
+      data: new Date(2025, 1, 5),
+    },
+    {
+      id: "16",
+      descricao: "Consulta Médica",
+      valor: 300.0,
+      data: new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 8),
+    },
+    {
+      id: "17",
+      descricao: "Presente de Aniversário",
+      valor: 75.0,
+      data: new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 10),
+    },
   ]);
 
   function adicionarDespesa(dadosDaNovaDespesa) {
