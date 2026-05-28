@@ -20,7 +20,7 @@ npm run dev
 ```env
 DATABASE_URL=mysql://root:senha@localhost:3306/gestao_financeira
 PORT=3000
-JWT_SECRET=coloca_uma_string_longa_aqui
+JWT_SECRET='token-retornado-de-/auth/dev/token-se-necessario'
 DEFAULT_USER_EMAIL=admin@gestao.com
 DEFAULT_USER_PASSWORD=admin123
 DEFAULT_USER_NAME=Admin

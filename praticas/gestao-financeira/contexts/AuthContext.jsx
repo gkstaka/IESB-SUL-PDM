@@ -41,6 +41,7 @@ export default function AuthState({ children }) {
 
   const login = useCallback(async (email, password) => {
     const result = await api.login(email, password)
+    console.log("token recebido:", result.token)
     await persist(result)
   }, [persist])
 
