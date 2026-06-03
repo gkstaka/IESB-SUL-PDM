@@ -1,0 +1,690 @@
+{
+  "info": {
+    "_postman_id": "c8f58728-7e72-40f5-b524-aabfa82aa7cc",
+    "name": "Gestao financeira API",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55258436",
+    "_collection_link": "https://go.postman.co/collection/55258436-c8f58728-7e72-40f5-b524-aabfa82aa7cc?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "healthCheck",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "healthCheck",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "42"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2a-ZGW1GVLs0jNU1QPv6IqRqXrkAGU\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:16:27 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"ok\": true,\n    \"name\": \"gestao-financeira-api\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "gerarToken",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "gerarToken",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/auth/dev/token",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "dev",
+                "token"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "313"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"139-GSIdQTHwRW4ajXRZEfIebkDVd1M\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:16:30 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtcG5iaGw5azAwMDV6aXkwczMydmNnbmciLCJlbWFpbCI6ImFkbWluQGdlc3Rhby5jb20iLCJuYW1lIjoiVXN1w6FyaW8gUGFkcsOjbyIsImlhdCI6MTc3OTg0ODE5MCwiZXhwIjoxNzgwNDUyOTkwfQ.tdBQ9U7eWevLvP-geoG4HdESPVC-1AdhM1FHW2-lhrg\",\n    \"usage\": \"Authorization: Bearer <token>\",\n    \"expires_in\": \"7d\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "listCategories",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "listCategories",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1478"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"5c6-bkpjVSw3O+szf3dYSPzTUgmMSzM\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:17:19 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": \"cmpnbhl7m0001ziy0p5hi5i3j\",\n        \"name\": \"food\",\n        \"displayName\": \"Alimentação\",\n        \"icon\": \"fastfood\",\n        \"background\": \"#DEA17B\",\n        \"isIncome\": false,\n        \"isDefault\": true,\n        \"userId\": null,\n        \"createdAt\": \"2026-05-27T00:19:46.978Z\",\n        \"updatedAt\": \"2026-05-27T00:19:46.978Z\"\n    },\n    {\n        \"id\": \"cmpnbhl7p0002ziy0d6t5hkcq\",\n        \"name\": \"house\",\n        \"displayName\": \"Casa\",\n        \"icon\": \"home\",\n        \"background\": \"#E6E088\",\n        \"isIncome\": false,\n        \"isDefault\": true,\n        \"userId\": null,\n        \"createdAt\": \"2026-05-27T00:19:46.982Z\",\n        \"updatedAt\": \"2026-05-27T00:19:46.982Z\"\n    },\n    {\n        \"id\": \"cmpnbhl7s0003ziy0vatd188l\",\n        \"name\": \"education\",\n        \"displayName\": \"Educação\",\n        \"icon\": \"book\",\n        \"background\": \"#AB8FBE\",\n        \"isIncome\": false,\n        \"isDefault\": true,\n        \"userId\": null,\n        \"createdAt\": \"2026-05-27T00:19:46.984Z\",\n        \"updatedAt\": \"2026-05-27T00:19:46.984Z\"\n    },\n    {\n        \"id\": \"cmpnbhl7f0000ziy0pufw0f9m\",\n        \"name\": \"income\",\n        \"displayName\": \"Renda\",\n        \"icon\": \"work\",\n        \"background\": \"#DE9AC3\",\n        \"isIncome\": true,\n        \"isDefault\": true,\n        \"userId\": null,\n        \"createdAt\": \"2026-05-27T00:19:46.972Z\",\n        \"updatedAt\": \"2026-05-27T00:19:46.972Z\"\n    },\n    {\n        \"id\": \"cmpndkbto0007i3vgbcqvipq0\",\n        \"name\": \"health\",\n        \"displayName\": \"Saúde\",\n        \"icon\": \"favorite\",\n        \"background\": \"#FFB6B6\",\n        \"isIncome\": false,\n        \"isDefault\": false,\n        \"userId\": \"cmpnbhl9k0005ziy0s32vcgng\",\n        \"createdAt\": \"2026-05-27T01:17:54.013Z\",\n        \"updatedAt\": \"2026-05-27T01:17:54.013Z\"\n    },\n    {\n        \"id\": \"cmpnbhl7v0004ziy0rdd0qs6v\",\n        \"name\": \"travel\",\n        \"displayName\": \"Viagens\",\n        \"icon\": \"airplanemode-active\",\n        \"background\": \"#82C9DE\",\n        \"isIncome\": false,\n        \"isDefault\": true,\n        \"userId\": null,\n        \"createdAt\": \"2026-05-27T00:19:46.988Z\",\n        \"updatedAt\": \"2026-05-27T00:19:46.988Z\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "insertCategories",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "insertCategories",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"name\": \"vg\",\r\n\t\"displayName\": \"vg\",\r\n\t\"icon\": \"favorite\",\r\n\t\"background\": \"#FFB6B6\",\r\n\t\"isIncome\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "256"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"100-Tg+kpBB+EXegXpwiE+G/Pm3LX/k\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:17:22 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"cmpnfot28000148tu0pa1jhz6\",\n    \"name\": \"vg\",\n    \"displayName\": \"vg\",\n    \"icon\": \"favorite\",\n    \"background\": \"#FFB6B6\",\n    \"isIncome\": false,\n    \"isDefault\": false,\n    \"userId\": \"cmpnbhl9k0005ziy0s32vcgng\",\n    \"createdAt\": \"2026-05-27T02:17:22.209Z\",\n    \"updatedAt\": \"2026-05-27T02:17:22.209Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "updateCategories",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "updateCategories",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"displayName\": \"Saúde e Bem-estar\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/categories/cmpnfot28000148tu0pa1jhz6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories",
+                "cmpnfot28000148tu0pa1jhz6"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "272"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"110-Pw3yg+yfHTkF1R8T18Nhm7tmPRc\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:17:47 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"cmpnfot28000148tu0pa1jhz6\",\n    \"name\": \"vg\",\n    \"displayName\": \"Saúde e Bem-estar\",\n    \"icon\": \"favorite\",\n    \"background\": \"#FFB6B6\",\n    \"isIncome\": false,\n    \"isDefault\": false,\n    \"userId\": \"cmpnbhl9k0005ziy0s32vcgng\",\n    \"createdAt\": \"2026-05-27T02:17:22.209Z\",\n    \"updatedAt\": \"2026-05-27T02:17:47.736Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "deleteCategories",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "deleteCategories",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/categories/cmpnfot28000148tu0pa1jhz6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categories",
+                "cmpnfot28000148tu0pa1jhz6"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:17:52 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "listTransactions",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "listTransactions",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/transactions",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "transactions"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1046"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"416-rDc4oZ8oIZrYBisV0r6jRPGWKqI\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:17:58 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": \"cmpncipav000er1gs2dfd1ru7\",\n        \"description\": \"1312\",\n        \"value\": \"1323.21\",\n        \"date\": \"2026-05-27T00:43:02.421Z\",\n        \"categoryId\": \"cmpnbhl7f0000ziy0pufw0f9m\",\n        \"userId\": \"cmpnbhl9k0005ziy0s32vcgng\",\n        \"createdAt\": \"2026-05-27T00:48:38.551Z\",\n        \"updatedAt\": \"2026-05-27T00:48:38.551Z\",\n        \"category\": {\n            \"id\": \"cmpnbhl7f0000ziy0pufw0f9m\",\n            \"name\": \"income\",\n            \"displayName\": \"Renda\",\n            \"icon\": \"work\",\n            \"background\": \"#DE9AC3\",\n            \"isIncome\": true,\n            \"isDefault\": true,\n            \"userId\": null,\n            \"createdAt\": \"2026-05-27T00:19:46.972Z\",\n            \"updatedAt\": \"2026-05-27T00:19:46.972Z\"\n        }\n    },\n    {\n        \"id\": \"cmpndmnf4000bi3vg6zomjz40\",\n        \"description\": \"Salário de outubro\",\n        \"value\": \"3500.5\",\n        \"date\": \"2026-04-29T00:00:00.000Z\",\n        \"categoryId\": \"cmpnbhl7m0001ziy0p5hi5i3j\",\n        \"userId\": \"cmpnbhl9k0005ziy0s32vcgng\",\n        \"createdAt\": \"2026-05-27T01:19:42.352Z\",\n        \"updatedAt\": \"2026-05-27T01:19:42.352Z\",\n        \"category\": {\n            \"id\": \"cmpnbhl7m0001ziy0p5hi5i3j\",\n            \"name\": \"food\",\n            \"displayName\": \"Alimentação\",\n            \"icon\": \"fastfood\",\n            \"background\": \"#DEA17B\",\n            \"isIncome\": false,\n            \"isDefault\": true,\n            \"userId\": null,\n            \"createdAt\": \"2026-05-27T00:19:46.978Z\",\n            \"updatedAt\": \"2026-05-27T00:19:46.978Z\"\n        }\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "insertTransactions",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "insertTransactions",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"description\": \"Salário de outubeeero\",\r\n  \"value\": 35002.50,\r\n  \"date\": \"2026-04-29\",\r\n  \"categoryId\": \"cmpnbhl7f0000ziy0pufw0f9m\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/transactions",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "transactions"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "527"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"20f-uE3tOTlRd06blqeCu8BdzOJoiYw\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:18:02 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"cmpnfpo5a000348tuwhuzfwob\",\n    \"description\": \"Salário de outubeeero\",\n    \"value\": \"35002.5\",\n    \"date\": \"2026-04-29T00:00:00.000Z\",\n    \"categoryId\": \"cmpnbhl7f0000ziy0pufw0f9m\",\n    \"userId\": \"cmpnbhl9k0005ziy0s32vcgng\",\n    \"createdAt\": \"2026-05-27T02:18:02.494Z\",\n    \"updatedAt\": \"2026-05-27T02:18:02.494Z\",\n    \"category\": {\n        \"id\": \"cmpnbhl7f0000ziy0pufw0f9m\",\n        \"name\": \"income\",\n        \"displayName\": \"Renda\",\n        \"icon\": \"work\",\n        \"background\": \"#DE9AC3\",\n        \"isIncome\": true,\n        \"isDefault\": true,\n        \"userId\": null,\n        \"createdAt\": \"2026-05-27T00:19:46.972Z\",\n        \"updatedAt\": \"2026-05-27T00:19:46.972Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "updateTransactions",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "updateTransactions",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"description\": \"Saúde e Bem-estar\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/transactions/cmpnfpo5a000348tuwhuzfwob",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "transactions",
+                "cmpnfpo5a000348tuwhuzfwob"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "523"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"20b-tna3/7dLA834i6HlNYAnsldqZ5o\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:18:07 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"cmpnfpo5a000348tuwhuzfwob\",\n    \"description\": \"Saúde e Bem-estar\",\n    \"value\": \"35002.5\",\n    \"date\": \"2026-04-29T00:00:00.000Z\",\n    \"categoryId\": \"cmpnbhl7f0000ziy0pufw0f9m\",\n    \"userId\": \"cmpnbhl9k0005ziy0s32vcgng\",\n    \"createdAt\": \"2026-05-27T02:18:02.494Z\",\n    \"updatedAt\": \"2026-05-27T02:18:07.597Z\",\n    \"category\": {\n        \"id\": \"cmpnbhl7f0000ziy0pufw0f9m\",\n        \"name\": \"income\",\n        \"displayName\": \"Renda\",\n        \"icon\": \"work\",\n        \"background\": \"#DE9AC3\",\n        \"isIncome\": true,\n        \"isDefault\": true,\n        \"userId\": null,\n        \"createdAt\": \"2026-05-27T00:19:46.972Z\",\n        \"updatedAt\": \"2026-05-27T00:19:46.972Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "deleteCategories",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "deleteCategories",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/transactions/cmpnfpo5a000348tuwhuzfwob",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "transactions",
+                "cmpnfpo5a000348tuwhuzfwob"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 27 May 2026 02:18:11 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ]
+}
