@@ -318,7 +318,7 @@ Resposta `200`:
 ---
 
 #### `POST /transactions` — requer Bearer token
-Cria uma transação.
+Cria uma transação. Necessário trocar categoryId por um id válido retornado de /categories
 
 ```json
 {
