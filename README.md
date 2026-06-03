@@ -57,6 +57,11 @@ DEFAULT_USER_NAME="Usuário Padrão"
 
 ### Banco de dados
 
+No banco de dados, executar a criação do schema
+```
+CREATE DATABASE gestao_financeira CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
 ```bash
 npx prisma init --datasource-provider mysql
 npx prisma migrate dev --name init   # cria as tabelas
