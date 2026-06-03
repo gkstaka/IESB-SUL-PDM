@@ -106,6 +106,7 @@ Base URL: `http://localhost:3000`
 
 | Método | Caminho | Bearer token? |
 |--------|---------|:-------------:|
+| GET | `/` | Não
 | POST | `/auth/register` | Não |
 | POST | `/auth/login` | Não |
 | GET | `/auth/dev/token` | Não |
@@ -124,6 +125,10 @@ Authorization: Bearer <token>
 ```
 
 ---
+
+### Health check
+
+#### `GET /` - sem token
 
 ### Auth
 
