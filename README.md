@@ -26,14 +26,11 @@ praticas/
 ```bash
 cd praticas/gestao-financeira-api
 
-npm install
-cp .env.example .env
-```
-
-Se necessário para instalar dependências, utilize:
-```bash
-npm install --force
 npm install prisma@5.22.0 @prisma/client@5.22.0 --force
+npm install express cors zod dotenv @prisma/client
+npm install --save-dev prisma nodemon
+npm install --force
+cp .env.example .env
 ```
 
 Edite o `./praticas/gestao-financeira/.env`:
@@ -57,6 +54,8 @@ DEFAULT_USER_PASSWORD="admin123"
 DEFAULT_USER_NAME="Usuário Padrão"
 ```
 
+Para rodar na máquina do IESB, utilizar a senha "iesb"
+
 ### Banco de dados
 
 No banco de dados, executar a criação do schema
@@ -65,7 +64,7 @@ CREATE DATABASE gestao_financeira CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_
 ```
 
 ```bash
-npx prisma init --datasource-provider mysql
+npx prisma init --datasource-provider mysql # se der erro, tentar rodar os comandos abaixo e fazer o teste se criou as tabelas
 npx prisma migrate dev --name init   # cria as tabelas
 npm run prisma:seed                  # popula com usuário e categorias padrão
 ```
