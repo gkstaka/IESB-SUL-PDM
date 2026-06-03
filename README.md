@@ -25,6 +25,7 @@ praticas/
 
 ```bash
 cd praticas/gestao-financeira-api
+
 npm install
 cp .env.example .env
 ```
@@ -32,6 +33,7 @@ cp .env.example .env
 Se necessário para instalar dependências, utilize:
 ```bash
 npm install --force
+npm install prisma@5.22.0 @prisma/client@5.22.0 --force
 ```
 
 Edite o `./praticas/gestao-financeira/.env`:
